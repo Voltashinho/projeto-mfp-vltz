@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .informacoes {
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .informacoes {
+        width: 90%;
+    }
+}

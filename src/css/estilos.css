@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carrossel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.conteudo {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.informacoes {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.informacoes h1 {
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    font-size: 1rem;
+}
+
+.botoes {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.botao:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
